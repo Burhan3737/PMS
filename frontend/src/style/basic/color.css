@@ -1,0 +1,10 @@
+:root {
+  --dark-bg-color: rgb(106, 75, 214);
+  --half-dark-bg-color: rgba(105, 75, 214, 0.5);
+  --quarter-dark-bg-color: rgba(105, 75, 214, 0.25);
+  --light-bg-color: rgb(240, 241, 216);
+  --middle-bg-colorr: rgb(204 206 159);
+  --dark-text-color: rgb(25, 23, 32);
+  --light-text-color: rgb(227, 233, 239);
+
+}

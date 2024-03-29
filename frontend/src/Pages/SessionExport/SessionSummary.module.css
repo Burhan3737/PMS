@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
+
+  padding: 5px;
+}
+.row {
+  /* color: white; */
+  width: 100%;
+  /* background-color: rgb(46, 33, 58); */
+  display: flex;
+}
+.table > thead > tr > th {
+  border: 1px solid black;
+}
+.table > tbody > tr > td {
+  border: 1px solid black;
+}

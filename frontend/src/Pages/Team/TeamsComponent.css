@@ -1,0 +1,60 @@
+.teams-container {
+  width:70%;
+ 
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.teams-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.teams-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.teams-container li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.teams-container button {
+  padding: 5px 10px;
+  background-color: var(--dark-bg-color);
+  ;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.teams-container button:hover {
+  background-color: lightskyblue;
+}
+
+.teams-container form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.teams-container form select,
+.teams-container form input[type='text'] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.teams-container form select[multiple] {
+  height: 100px;
+}
+
+.teams-container form button {
+  margin-top: 10px;
+}
+
+

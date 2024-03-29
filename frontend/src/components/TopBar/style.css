@@ -1,0 +1,45 @@
+.header {
+  background: var(--dark-bg-color);
+  height: 70px;
+  color: white;
+  position: sticky;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 3px solid var(--dark-bg-color);
+  top: 0;
+}
+
+.user-area-topbar {
+  display: flex;
+}
+
+.user-area-topbar ul li {
+  display: inline-block;
+  margin-right: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+ul.list-unstyled {
+  float: right;
+  margin: 25px 35px 25px 0;
+}
+
+a#Logout {
+  color: var(--light-text-color);
+  text-decoration: none;
+}
+
+a#Logout div span {
+  margin-left: 15px;
+}
+
+.top-bar-area {
+  flex: 75;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding-inline-start: 15px;
+  width: 20%;
+}

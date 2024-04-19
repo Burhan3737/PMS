@@ -5,7 +5,7 @@ let ServiceLocator = require("../../framework/servicelocator");
 
 let TeamSchema = new Schema({
   teamName: String,
-  teamProjects: Array,
+  project: String,
   teamManager: { email: String, id: String, name: String },
   teamLead: { email: String, id: String, name: String },
   team: [{ email: String, id: String, name: String }],

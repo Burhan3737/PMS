@@ -152,8 +152,6 @@ export default class taskSessionDbService {
       result.status = 200;
       result.value = sessions;
 
-      console.log("These are the timed sessions", sessions);
-
       //filtering to find only the active timed session
       result.value = result.value.filter((session) => session.timed === true);
       result.value = result.value.filter((session) => !session.checkout);

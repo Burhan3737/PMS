@@ -10,6 +10,7 @@ exports.read = async function (req, res) {
 
 exports.create = async function (req, res) {
   let teamDbService = ServiceLocator.resolve("TeamDbService");
+  console.log(req.body.team);
   let resultObj = await teamDbService.createNew(req.body.team);
   res.status(resultObj.status);
 

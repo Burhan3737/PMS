@@ -165,6 +165,10 @@ const Team = (props) => {
                 </th>
 
                 <th scope="col" style={{ width: "15%" }}>
+                  Team Project
+                </th>
+
+                <th scope="col" style={{ width: "15%" }}>
                   Actions
                 </th>
               </tr>
@@ -174,6 +178,8 @@ const Team = (props) => {
                 <tr style={{ height: "40px" }}>
                   <td>{team.teamName} </td>
                   <td>{team.teamLead && team.teamLead.name}</td>
+
+                  <td>{team.project}</td>
                   <td>
                     {
                       <div className="action-class">

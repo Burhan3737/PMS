@@ -123,7 +123,6 @@ const StatusExport = (props) => {
                   <th>Member</th>
                   <th>Project</th>
                   <th>Task Summary</th>
-                  <th>Team </th>
                   <th>Planned/UnPlanned</th>
                   <th>Action</th>
                 </tr>
@@ -147,9 +146,6 @@ const StatusExport = (props) => {
                           onChange={handleChange}
                           name="TaskSummary"
                         ></textarea>
-                      </td>
-                      <td>
-                        <input className="export-input" value={status.Team} id={index} onChange={handleChange} name="Team" />
                       </td>
                       <td>
                         <select

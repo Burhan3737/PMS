@@ -2,11 +2,17 @@ import React from "react";
 import TeamMemberSelector from "./TeamMemberSelector";
 
 export default function CreateTeam(props) {
-
-  const { newTeam, handleTeamLeadChange, users, handleUsersChange, handleCreateTeam, handleProjectChange, handleTeamNameChange, setNewTeamFormOpen, projects } = props
-
-
-
+  const {
+    newTeam,
+    handleTeamLeadChange,
+    users,
+    handleUsersChange,
+    handleCreateTeam,
+    handleProjectChange,
+    handleTeamNameChange,
+    setNewTeamFormOpen,
+    projects,
+  } = props;
 
   return (
     <div>
@@ -34,7 +40,7 @@ export default function CreateTeam(props) {
               </option>
             ))}
           </select> */}
-          <TeamMemberSelector users={users} handleUsersChange={handleUsersChange} newTeam={newTeam}  />
+          <TeamMemberSelector users={users} handleUsersChange={handleUsersChange} newTeam={newTeam} />
         </label>
 
         <label>
@@ -48,22 +54,21 @@ export default function CreateTeam(props) {
             <option value="">Select Project</option>
             {projects.map((project) => (
               <option key={project.id} value={project.id}>
-                {project.name}
+                {project.val}
               </option>
             ))}
           </select>
         </label>
-       <div className="action-class">
-        <button type="button" onClick={handleCreateTeam}>
-          Create Team
-        </button>
+        <div className="action-class">
+          <button type="button" onClick={handleCreateTeam}>
+            Create Team
+          </button>
 
-        <button type="button" onClick={()=>setNewTeamFormOpen(false)}>
-          Close
-        </button>
-
+          <button type="button" onClick={() => setNewTeamFormOpen(false)}>
+            Close
+          </button>
         </div>
       </form>
     </div>
-  )
+  );
 }

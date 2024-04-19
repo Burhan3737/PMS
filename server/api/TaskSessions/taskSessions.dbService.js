@@ -219,7 +219,6 @@ export default class taskSessionDbService {
 function pushSessionToSummary(taskSummary, userSessions, allUsers, teams, dateCriteria) {
   let row = {
     Date: "",
-    Team: "",
     Project: "",
     Member: "",
     TaskSummary: "",
@@ -233,7 +232,6 @@ function pushSessionToSummary(taskSummary, userSessions, allUsers, teams, dateCr
           let toPushRow = { ...row };
           toPushRow.Member = user.name;
           toPushRow.Date = moment(fSession.checkin).format("D-MMM-YYYY");
-          toPushRow.Team = fSession.team ? fs.team : "";
           toPushRow.Project = fSession.project;
           toPushRow.TaskSummary = fSession.task;
           taskSummary.push(toPushRow);

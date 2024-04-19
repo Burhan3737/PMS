@@ -7,6 +7,7 @@ import CreateTeam from "./CreateTeam";
 import "./TeamsComponent.css"; // Import the CSS file
 import TeamMemberSelector from "./TeamMemberSelector";
 import EditTeam from "./EditTeam";
+import { projects } from "../../components/DailyLogging/DailyLoggingVars";
 const Team = (props) => {
   const currentUser = JSON.parse(localStorage.getItem("loggedInUser"));
   const prevActionType = props.actionType;
@@ -14,7 +15,6 @@ const Team = (props) => {
 
   const [teams, setTeams] = useState([]);
   const [users, setUsers] = useState([]);
-  const [projects, setProjects] = useState([]);
 
   const [newTeamFormOpen, setNewTeamFormOpen] = useState(false);
   const [editTeamFormOpen, setEditTeamFormOpen] = useState(false);

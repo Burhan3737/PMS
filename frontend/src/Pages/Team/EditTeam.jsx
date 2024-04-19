@@ -2,11 +2,17 @@ import React from "react";
 import TeamMemberSelector from "./TeamMemberSelector";
 
 export default function EditTeam(props) {
-
-  const { newTeam, handleTeamLeadChange, users, handleUsersChange, handleConfirmEdit, handleProjectChange, handleTeamNameChange, setEditTeamFormOpen, projects } = props
-
-
-
+  const {
+    newTeam,
+    handleTeamLeadChange,
+    users,
+    handleUsersChange,
+    handleConfirmEdit,
+    handleProjectChange,
+    handleTeamNameChange,
+    setEditTeamFormOpen,
+    projects,
+  } = props;
 
   return (
     <div>
@@ -48,20 +54,20 @@ export default function EditTeam(props) {
             <option value="">Select Project</option>
             {projects.map((project) => (
               <option key={project.id} value={project.id}>
-                {project.name}
+                {project.val}
               </option>
             ))}
           </select>
         </label>
-       <div className="action-class">
-        <button type="button" onClick={handleConfirmEdit}>
-          Confirm
-        </button>
-        <button type="button" onClick={()=>setEditTeamFormOpen(false)}>
-          Close
-        </button>
+        <div className="action-class">
+          <button type="button" onClick={handleConfirmEdit}>
+            Confirm
+          </button>
+          <button type="button" onClick={() => setEditTeamFormOpen(false)}>
+            Close
+          </button>
         </div>
       </form>
     </div>
-  )
+  );
 }
